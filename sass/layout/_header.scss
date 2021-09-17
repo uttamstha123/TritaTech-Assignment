@@ -1,0 +1,41 @@
+.header {
+  min-height: 100vh;
+  max-width: 100%;
+  background-image: $bg-g-clr;
+  color: $white-clr;
+  padding: 1.5em 0;
+
+  .hero-section {
+    @include flex(_, space-between, center);
+    font-weight: 700;
+    padding: 0 4em;
+    margin-top: 2em;
+    min-height: 70vh;
+    .img img {
+      max-width: 95%;
+    }
+  }
+  .scroll {
+    width: 5rem;
+    margin: 1em auto;
+    cursor: pointer;
+  }
+}
+
+@media all and(max-width: 640px) {
+  .header {
+    .hero-section {
+      padding: 0 2em;
+      @include flex(column, center, center);
+      gap: 2em;
+      .img img {
+        max-width: 100%;
+      }
+    }
+    .content-wrapper {
+      text-align: center;
+      @include flex(column, _, center);
+      gap: 2em;
+    }
+  }
+}

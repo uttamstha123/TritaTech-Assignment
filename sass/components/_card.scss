@@ -1,0 +1,24 @@
+.card {
+  @include flex(_, _, _);
+  gap: 4em;
+  & > div {
+    flex: 1;
+  }
+  .img-wrapper {
+    max-width: 40%;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .card {
+    text-align: center;
+    @include flex(column, _, _);
+    .img-wrapper {
+      max-width: 100%;
+    }
+  }
+  .card:nth-child(even){
+    @include flex(column-reverse, _, _);
+    
+  }
+}

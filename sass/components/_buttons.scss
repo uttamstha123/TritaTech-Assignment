@@ -1,0 +1,32 @@
+.cta {
+  display: inline-flex;
+  font-size: $fs-btn;
+  background: $btn-clr;
+  padding: 0.5em 2em;
+  border-radius: 10rem;
+}
+/********
+Icons
+********/
+.social-icons {
+  @include flex(_, center, center);
+  gap: 4em;
+  .icon-wrapper {
+    max-width: 5rem;
+  }
+}
+
+@import "../media";
+@media all and (max-width: 640px) {
+  .cta {
+    font-size: $fs-btn;
+    display: inline-flex;
+  }
+
+  .social-icons {
+    gap: 2.5em;
+    .icon-wrapper {
+      max-width: 2rem;
+    }
+  }
+}

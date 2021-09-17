@@ -1,0 +1,43 @@
+body {
+  font-family: $ff-primary;
+}
+
+.links {
+  font-size: $fs-nav;
+}
+.title {
+  font-size: $fs-title;
+}
+.subtitle {
+  font-size: $fs-subtitle;
+  font-weight: bold;
+  color: $primary-clr-1;
+}
+.des {
+  font-size: $fs-des;
+  color: $secondary-clr-1;
+}
+
+.social-icons {
+  @include flex(_, center, center);
+  gap: 4em;
+  .icon-wrapper {
+    max-width: 5rem;
+  }
+}
+
+@import '../media';
+@media all and (max-width: 640px){
+  .links {
+    font-size: $fs-nav;
+  }
+  .title {
+    font-size: $fs-title;
+  }
+  .subtitle {
+    font-size: $fs-subtitle;
+  }
+  .des {
+    font-size: $fs-des;
+  }
+}

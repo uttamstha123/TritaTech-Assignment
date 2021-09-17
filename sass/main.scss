@@ -1,0 +1,16 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/utilities';
+
+@import './Basic/reset';
+@import './Basic/typography';
+
+@import './components/buttons';
+@import './components/card';
+
+@import './layout/navigation';
+@import './layout/header';
+@import './layout/layout-1';
+@import './layout/testimonials';
+@import './layout/footer';
+
